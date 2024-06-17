@@ -1,0 +1,3369 @@
+{
+  "input": {
+    "venue": "scienceux",
+    "opts": {
+      "yes": false,
+      "resume": false,
+      "maxSizeWebp": 3145728
+    }
+  },
+  "work": {
+    "id": "018fc934-e2ec-7eff-8dcc-545b3d83781d",
+    "date_created": "2024-05-30T11:13:57.484Z"
+  },
+  "workVersion": {
+    "id": "01901165-01e0-7d7f-ab5d-939221d45f0c",
+    "date_created": "2024-06-13T11:39:10.688Z"
+  },
+  "submission": {
+    "id": "018fc934-e5de-7c2d-8318-0205b11515a1",
+    "date_created": "2024-05-30T11:13:58.231Z"
+  },
+  "submissionVersion": {
+    "id": "01901165-0505-7dd2-bfa9-017805f43657",
+    "date_created": "2024-06-13T11:39:11.487Z"
+  },
+  "key": "f6005183-5290-48e0-a1ec-fce79d0741c2",
+  "venue": "scienceux",
+  "kind": {
+    "id": "018baac7-36e2-7f1f-b8fa-1fc9f5d73c84",
+    "date_created": "2023-11-07T17:14:24.354Z",
+    "date_modified": "2024-04-29T10:24:37.417Z",
+    "name": "post",
+    "content": {
+      "title": "Post"
+    },
+    "default": true,
+    "checks": [
+      {
+        "id": "abstract-exists"
+      },
+      {
+        "id": "abstract-length"
+      },
+      {
+        "id": "authors-exist"
+      },
+      {
+        "id": "authors-corresponding"
+      },
+      {
+        "id": "authors-have-affiliations"
+      },
+      {
+        "id": "authors-have-orcid",
+        "optional": true
+      },
+      {
+        "id": "authors-have-credit-roles",
+        "optional": true
+      },
+      {
+        "id": "keywords-defined"
+      },
+      {
+        "id": "keywords-length",
+        "max": 15
+      },
+      {
+        "id": "keywords-unique"
+      },
+      {
+        "id": "links-resolve"
+      },
+      {
+        "id": "abstract-exists"
+      },
+      {
+        "id": "doi-exists"
+      }
+    ],
+    "links": {
+      "self": "https://sites.curvenote.com/v1/sites/scienceux/kinds/018baac7-36e2-7f1f-b8fa-1fc9f5d73c84",
+      "site": "https://sites.curvenote.com/v1/sites/scienceux"
+    }
+  },
+  "source": {},
+  "report": [
+    {
+      "id": "abstract-exists",
+      "title": "Abstract Exists",
+      "purpose": "ensure abstract exists",
+      "tags": [
+        "frontmatter",
+        "abstract"
+      ],
+      "status": "pass",
+      "message": "Abstract exists",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "nice": "Abstract exists 💯"
+    },
+    {
+      "id": "abstract-length",
+      "title": "Abstract Length",
+      "purpose": "ensure abstract has the correct length",
+      "tags": [
+        "frontmatter",
+        "abstract"
+      ],
+      "options": [
+        {
+          "id": "max",
+          "title": "Maximum word count for abstract",
+          "type": "number",
+          "default": 400
+        }
+      ],
+      "status": "pass",
+      "message": "Abstract is correct length (293/400 words)",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "nice": "Abstract is a good length 🔢"
+    },
+    {
+      "id": "authors-exist",
+      "title": "Authors",
+      "purpose": "ensure authors are defined",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "status": "pass",
+      "message": "Found 2 authors",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "Authors found 👋"
+    },
+    {
+      "id": "authors-corresponding",
+      "title": "Corresponding Author",
+      "purpose": "ensure there is a corresponding author",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "status": "pass",
+      "message": "Ruth Pfosser provided an email: <a08245118@univie.ac.at>",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "Corresponding author is set 📧"
+    },
+    {
+      "id": "authors-have-affiliations",
+      "title": "Author Affiliations",
+      "purpose": "ensure each author has an affiliation",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "status": "pass",
+      "message": "Ruth Pfosser has an affiliation",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All authors have affiliations 🏫"
+    },
+    {
+      "id": "authors-have-affiliations",
+      "title": "Author Affiliations",
+      "purpose": "ensure each author has an affiliation",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "status": "pass",
+      "message": "Mike Morrison has an affiliation",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All authors have affiliations 🏫"
+    },
+    {
+      "id": "authors-have-orcid",
+      "title": "ORCID",
+      "purpose": "ensure each author has an ORCID",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "fail",
+      "message": "Ruth Pfosser does not have an ORCID",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "help": "Add an ORCID to each author"
+    },
+    {
+      "id": "authors-have-orcid",
+      "title": "ORCID",
+      "purpose": "ensure each author has an ORCID",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "fail",
+      "message": "Mike Morrison does not have an ORCID",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "help": "Add an ORCID to each author"
+    },
+    {
+      "id": "authors-have-credit-roles",
+      "title": "CRediT Roles",
+      "purpose": "ensure each author has one or more CRediT roles",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "pass",
+      "message": "Ruth Pfosser has valid CRediT role of \"Conceptualization\"",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All CRediT roles look good 🥳"
+    },
+    {
+      "id": "authors-have-credit-roles",
+      "title": "CRediT Roles",
+      "purpose": "ensure each author has one or more CRediT roles",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "pass",
+      "message": "Ruth Pfosser has valid CRediT role of \"Data curation\"",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All CRediT roles look good 🥳"
+    },
+    {
+      "id": "authors-have-credit-roles",
+      "title": "CRediT Roles",
+      "purpose": "ensure each author has one or more CRediT roles",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "pass",
+      "message": "Ruth Pfosser has valid CRediT role of \"Methodology\"",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All CRediT roles look good 🥳"
+    },
+    {
+      "id": "authors-have-credit-roles",
+      "title": "CRediT Roles",
+      "purpose": "ensure each author has one or more CRediT roles",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "pass",
+      "message": "Ruth Pfosser has valid CRediT role of \"Writing – original draft\"",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All CRediT roles look good 🥳"
+    },
+    {
+      "id": "authors-have-credit-roles",
+      "title": "CRediT Roles",
+      "purpose": "ensure each author has one or more CRediT roles",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "pass",
+      "message": "Ruth Pfosser has valid CRediT role of \"Formal analysis\"",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All CRediT roles look good 🥳"
+    },
+    {
+      "id": "authors-have-credit-roles",
+      "title": "CRediT Roles",
+      "purpose": "ensure each author has one or more CRediT roles",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "pass",
+      "message": "Ruth Pfosser has valid CRediT role of \"Validation\"",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All CRediT roles look good 🥳"
+    },
+    {
+      "id": "authors-have-credit-roles",
+      "title": "CRediT Roles",
+      "purpose": "ensure each author has one or more CRediT roles",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "pass",
+      "message": "Mike Morrison has valid CRediT role of \"Conceptualization\"",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All CRediT roles look good 🥳"
+    },
+    {
+      "id": "authors-have-credit-roles",
+      "title": "CRediT Roles",
+      "purpose": "ensure each author has one or more CRediT roles",
+      "tags": [
+        "frontmatter",
+        "authors"
+      ],
+      "optional": true,
+      "status": "pass",
+      "message": "Mike Morrison has valid CRediT role of \"Writing – review & editing\"",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "All CRediT roles look good 🥳"
+    },
+    {
+      "id": "keywords-defined",
+      "title": "Keywords",
+      "purpose": "ensure keywords exist",
+      "tags": [
+        "frontmatter",
+        "keywords"
+      ],
+      "status": "pass",
+      "message": "Found 4 keywords",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "note": "Keywords: \"eye tracking\", \"betterposter design\", \"experimental study\", \"usability\"",
+      "nice": "Keywords added 🔑"
+    },
+    {
+      "id": "keywords-length",
+      "title": "Number of Keywords",
+      "purpose": "ensure the right number of keywords exist",
+      "options": [
+        {
+          "id": "max",
+          "title": "Maximum number of keywords",
+          "type": "number",
+          "default": 5
+        }
+      ],
+      "tags": [
+        "frontmatter",
+        "keywords"
+      ],
+      "max": 15,
+      "status": "pass",
+      "message": "Correct number of keywords (4/15)",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "Correct number of keywords included 🔢"
+    },
+    {
+      "id": "keywords-unique",
+      "title": "Unique Keywords",
+      "purpose": "ensure the keywords are unique",
+      "tags": [
+        "frontmatter",
+        "keywords"
+      ],
+      "status": "pass",
+      "message": "First time keyword \"eye tracking\" encountered",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "Keywords are unique 🔐"
+    },
+    {
+      "id": "keywords-unique",
+      "title": "Unique Keywords",
+      "purpose": "ensure the keywords are unique",
+      "tags": [
+        "frontmatter",
+        "keywords"
+      ],
+      "status": "pass",
+      "message": "First time keyword \"betterposter design\" encountered",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "Keywords are unique 🔐"
+    },
+    {
+      "id": "keywords-unique",
+      "title": "Unique Keywords",
+      "purpose": "ensure the keywords are unique",
+      "tags": [
+        "frontmatter",
+        "keywords"
+      ],
+      "status": "pass",
+      "message": "First time keyword \"experimental study\" encountered",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "Keywords are unique 🔐"
+    },
+    {
+      "id": "keywords-unique",
+      "title": "Unique Keywords",
+      "purpose": "ensure the keywords are unique",
+      "tags": [
+        "frontmatter",
+        "keywords"
+      ],
+      "status": "pass",
+      "message": "First time keyword \"usability\" encountered",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+      "nice": "Keywords are unique 🔐"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.youtube.com/watch?v=SYk29tnxASs",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 44,
+          "column": 1
+        },
+        "end": {
+          "line": 44,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.youtube.com/watch?v=SYk29tnxASs",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 44,
+          "column": 1
+        },
+        "end": {
+          "line": 44,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.youtube.com/watch?v=WBjhxjWDiHw",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 44,
+          "column": 1
+        },
+        "end": {
+          "line": 44,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://oeawi.at/en/guidelines/#:~:text=All%20persons%20involved%20in%20research,junior%20scientists/researchers%20in%20particular.",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 46,
+          "column": 1
+        },
+        "end": {
+          "line": 46,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "fail",
+      "message": "https://psycnet.apa.org/record/1935-05800-000 (403, Forbidden)",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 53,
+          "column": 1
+        },
+        "end": {
+          "line": 53,
+          "column": 1
+        }
+      },
+      "help": "Check that \"https://psycnet.apa.org/record/1935-05800-000\" is correct"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 57,
+          "column": 1
+        },
+        "end": {
+          "line": 57,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 57,
+          "column": 1
+        },
+        "end": {
+          "line": 57,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 62,
+          "column": 1
+        },
+        "end": {
+          "line": 62,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 64,
+          "column": 1
+        },
+        "end": {
+          "line": 64,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 75,
+          "column": 1
+        },
+        "end": {
+          "line": 75,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 77,
+          "column": 1
+        },
+        "end": {
+          "line": 77,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 79,
+          "column": 1
+        },
+        "end": {
+          "line": 79,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.R-project.org/",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 83,
+          "column": 1
+        },
+        "end": {
+          "line": 83,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "http://www.rstudio.com/",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 83,
+          "column": 1
+        },
+        "end": {
+          "line": 83,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "http://www.posit.co/",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 83,
+          "column": 1
+        },
+        "end": {
+          "line": 83,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://rmarkdown.rstudio.com",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 83,
+          "column": 1
+        },
+        "end": {
+          "line": 83,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 90,
+          "column": 1
+        },
+        "end": {
+          "line": 90,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 90,
+          "column": 1
+        },
+        "end": {
+          "line": 90,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 90,
+          "column": 1
+        },
+        "end": {
+          "line": 90,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 90,
+          "column": 1
+        },
+        "end": {
+          "line": 90,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 109,
+          "column": 1
+        },
+        "end": {
+          "line": 109,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 109,
+          "column": 1
+        },
+        "end": {
+          "line": 109,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 132,
+          "column": 1
+        },
+        "end": {
+          "line": 132,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 138,
+          "column": 1
+        },
+        "end": {
+          "line": 138,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 138,
+          "column": 1
+        },
+        "end": {
+          "line": 138,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 138,
+          "column": 1
+        },
+        "end": {
+          "line": 138,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://humansystems.arc.nasa.gov/groups/TLX/",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 138,
+          "column": 1
+        },
+        "end": {
+          "line": 138,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 140,
+          "column": 1
+        },
+        "end": {
+          "line": 140,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 140,
+          "column": 1
+        },
+        "end": {
+          "line": 140,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 163,
+          "column": 1
+        },
+        "end": {
+          "line": 163,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 167,
+          "column": 1
+        },
+        "end": {
+          "line": 167,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://humansystems.arc.nasa.gov/groups/TLX/",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 169,
+          "column": 1
+        },
+        "end": {
+          "line": 169,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 169,
+          "column": 1
+        },
+        "end": {
+          "line": 169,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 181,
+          "column": 1
+        },
+        "end": {
+          "line": 181,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 181,
+          "column": 1
+        },
+        "end": {
+          "line": 181,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 183,
+          "column": 1
+        },
+        "end": {
+          "line": 183,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 183,
+          "column": 1
+        },
+        "end": {
+          "line": 183,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 183,
+          "column": 1
+        },
+        "end": {
+          "line": 183,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 185,
+          "column": 1
+        },
+        "end": {
+          "line": 185,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 185,
+          "column": 1
+        },
+        "end": {
+          "line": 185,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 187,
+          "column": 1
+        },
+        "end": {
+          "line": 187,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 195,
+          "column": 1
+        },
+        "end": {
+          "line": 195,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 195,
+          "column": 1
+        },
+        "end": {
+          "line": 195,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "links-resolve",
+      "title": "Links Resolve",
+      "purpose": "ensure all external URLs resolve",
+      "tags": [
+        "content",
+        "link"
+      ],
+      "status": "pass",
+      "message": "mailto:a08245118@univie.ac.at",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "position": {
+        "start": {
+          "line": 297,
+          "column": 1
+        },
+        "end": {
+          "line": 297,
+          "column": 1
+        }
+      },
+      "nice": "Links are valid 🔗"
+    },
+    {
+      "id": "abstract-exists",
+      "title": "Abstract Exists",
+      "purpose": "ensure abstract exists",
+      "tags": [
+        "frontmatter",
+        "abstract"
+      ],
+      "status": "pass",
+      "message": "Abstract exists",
+      "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+      "nice": "Abstract exists 💯"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Morrison_2020",
+      "note": "Citation DOI: 10.1016/j.cell.2020.07.029",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Oronje_2022",
+      "note": "Citation DOI: 10.32388/p7n5bo",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Rowe_2015",
+      "note": "Citation DOI: 10.1111/febs.13383",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Ilic_2013",
+      "note": "Citation DOI: 10.1111/hir.12015",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Pirolli_1999",
+      "note": "Citation DOI: 10.1037/0033-295x.106.4.643",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Mayer_2003",
+      "note": "Citation DOI: 10.1207/s15326985ep3801_6",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Krasich_2020",
+      "note": "Citation DOI: 10.1167/jov.20.9.10",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Yarbus_1967",
+      "note": "Citation DOI: 10.1007/978-1-4899-5379-7",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Katona_2022",
+      "note": "Citation DOI: 10.3390/s22030912",
+      "nice": "citation valid 🔗"
+    },
+    {
+      "id": "doi-exists",
+      "title": "DOI Exists",
+      "purpose": "ensure all citations have valid DOI",
+      "options": [
+        {
+          "id": "fix",
+          "type": "boolean",
+          "title": "Fix DOIs",
+          "description": "Propose alternatives for missing/invalid DOIs"
+        }
+      ],
+      "tags": [
+        "content",
+        "citation"
+      ],
+      "status": "pass",
+      "message": "Citation has valid DOI: Galley2015Fixation",
+      "note": "Citation DOI: 10.13140/RG.2.1.3128.1769",
+      "nice": "citation valid 🔗"
+    }
+  ],
+  "job": {
+    "id": "01901164-e75f-7bb1-b5f6-45f5efb879d5",
+    "date_created": "2024-06-13T11:39:03.903Z",
+    "date_modified": "2024-06-13T11:39:12.219Z",
+    "job_type": "CLI_CHECK",
+    "status": "COMPLETED",
+    "payload": {
+      "key": "f6005183-5290-48e0-a1ec-fce79d0741c2",
+      "kind": {
+        "id": "018baac7-36e2-7f1f-b8fa-1fc9f5d73c84",
+        "name": "post",
+        "links": {
+          "self": "https://sites.curvenote.com/v1/sites/scienceux/kinds/018baac7-36e2-7f1f-b8fa-1fc9f5d73c84",
+          "site": "https://sites.curvenote.com/v1/sites/scienceux"
+        },
+        "checks": [
+          {
+            "id": "abstract-exists"
+          },
+          {
+            "id": "abstract-length"
+          },
+          {
+            "id": "authors-exist"
+          },
+          {
+            "id": "authors-corresponding"
+          },
+          {
+            "id": "authors-have-affiliations"
+          },
+          {
+            "id": "authors-have-orcid",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "optional": true
+          },
+          {
+            "id": "keywords-defined"
+          },
+          {
+            "id": "keywords-length",
+            "max": 15
+          },
+          {
+            "id": "keywords-unique"
+          },
+          {
+            "id": "links-resolve"
+          },
+          {
+            "id": "abstract-exists"
+          },
+          {
+            "id": "doi-exists"
+          }
+        ],
+        "content": {
+          "title": "Post"
+        },
+        "default": true,
+        "date_created": "2023-11-07T17:14:24.354Z",
+        "date_modified": "2024-04-29T10:24:37.417Z"
+      },
+      "site": "scienceux",
+      "source": {},
+      "collection": {
+        "id": "018e65af-9448-7f44-9d00-a1a1bf56bdaf",
+        "name": "articles",
+        "open": true,
+        "slug": "",
+        "kinds": [
+          {
+            "id": "018baac7-36e2-7f1f-b8fa-1fc9f5d73c84",
+            "name": "post",
+            "links": {
+              "self": "https://sites.curvenote.com/v1/sites/scienceux/kinds/018baac7-36e2-7f1f-b8fa-1fc9f5d73c84",
+              "site": "https://sites.curvenote.com/v1/sites/scienceux"
+            },
+            "content": {
+              "title": "Post"
+            },
+            "default": true
+          }
+        ],
+        "links": {
+          "self": "https://sites.curvenote.com/v1/sites/scienceux/collections/018e65af-9448-7f44-9d00-a1a1bf56bdaf",
+          "site": "https://sites.curvenote.com/v1/sites/scienceux"
+        },
+        "content": {
+          "title": "Articles",
+          "description": "A collection of research articles"
+        },
+        "default": true,
+        "workflow": "SIMPLE",
+        "date_created": "2024-03-22T10:23:09.378Z",
+        "date_modified": "2024-03-22T10:23:09.378Z",
+        "num_published": 3
+      }
+    },
+    "results": {
+      "cdnKey": "01901164-ef24-78c9-8239-d54b8dd40e82",
+      "checks": {
+        "kind": {
+          "id": "018baac7-36e2-7f1f-b8fa-1fc9f5d73c84",
+          "name": "post",
+          "links": {
+            "self": "https://sites.curvenote.com/v1/sites/scienceux/kinds/018baac7-36e2-7f1f-b8fa-1fc9f5d73c84",
+            "site": "https://sites.curvenote.com/v1/sites/scienceux"
+          },
+          "checks": [
+            {
+              "id": "abstract-exists"
+            },
+            {
+              "id": "abstract-length"
+            },
+            {
+              "id": "authors-exist"
+            },
+            {
+              "id": "authors-corresponding"
+            },
+            {
+              "id": "authors-have-affiliations"
+            },
+            {
+              "id": "authors-have-orcid",
+              "optional": true
+            },
+            {
+              "id": "authors-have-credit-roles",
+              "optional": true
+            },
+            {
+              "id": "keywords-defined"
+            },
+            {
+              "id": "keywords-length",
+              "max": 15
+            },
+            {
+              "id": "keywords-unique"
+            },
+            {
+              "id": "links-resolve"
+            },
+            {
+              "id": "abstract-exists"
+            },
+            {
+              "id": "doi-exists"
+            }
+          ],
+          "content": {
+            "title": "Post"
+          },
+          "default": true,
+          "date_created": "2023-11-07T17:14:24.354Z",
+          "date_modified": "2024-04-29T10:24:37.417Z"
+        },
+        "venue": "scienceux",
+        "report": [
+          {
+            "id": "abstract-exists",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Abstract exists 💯",
+            "tags": [
+              "frontmatter",
+              "abstract"
+            ],
+            "title": "Abstract Exists",
+            "status": "pass",
+            "message": "Abstract exists",
+            "purpose": "ensure abstract exists"
+          },
+          {
+            "id": "abstract-length",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Abstract is a good length 🔢",
+            "tags": [
+              "frontmatter",
+              "abstract"
+            ],
+            "title": "Abstract Length",
+            "status": "pass",
+            "message": "Abstract is correct length (293/400 words)",
+            "options": [
+              {
+                "id": "max",
+                "type": "number",
+                "title": "Maximum word count for abstract",
+                "default": 400
+              }
+            ],
+            "purpose": "ensure abstract has the correct length"
+          },
+          {
+            "id": "authors-exist",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "Authors found 👋",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "Authors",
+            "status": "pass",
+            "message": "Found 2 authors",
+            "purpose": "ensure authors are defined"
+          },
+          {
+            "id": "authors-corresponding",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "Corresponding author is set 📧",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "Corresponding Author",
+            "status": "pass",
+            "message": "Ruth Pfosser provided an email: <a08245118@univie.ac.at>",
+            "purpose": "ensure there is a corresponding author"
+          },
+          {
+            "id": "authors-have-affiliations",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All authors have affiliations 🏫",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "Author Affiliations",
+            "status": "pass",
+            "message": "Ruth Pfosser has an affiliation",
+            "purpose": "ensure each author has an affiliation"
+          },
+          {
+            "id": "authors-have-affiliations",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All authors have affiliations 🏫",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "Author Affiliations",
+            "status": "pass",
+            "message": "Mike Morrison has an affiliation",
+            "purpose": "ensure each author has an affiliation"
+          },
+          {
+            "id": "authors-have-orcid",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "help": "Add an ORCID to each author",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "ORCID",
+            "status": "fail",
+            "message": "Ruth Pfosser does not have an ORCID",
+            "purpose": "ensure each author has an ORCID",
+            "optional": true
+          },
+          {
+            "id": "authors-have-orcid",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "help": "Add an ORCID to each author",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "ORCID",
+            "status": "fail",
+            "message": "Mike Morrison does not have an ORCID",
+            "purpose": "ensure each author has an ORCID",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All CRediT roles look good 🥳",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "CRediT Roles",
+            "status": "pass",
+            "message": "Ruth Pfosser has valid CRediT role of \"Conceptualization\"",
+            "purpose": "ensure each author has one or more CRediT roles",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All CRediT roles look good 🥳",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "CRediT Roles",
+            "status": "pass",
+            "message": "Ruth Pfosser has valid CRediT role of \"Data curation\"",
+            "purpose": "ensure each author has one or more CRediT roles",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All CRediT roles look good 🥳",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "CRediT Roles",
+            "status": "pass",
+            "message": "Ruth Pfosser has valid CRediT role of \"Methodology\"",
+            "purpose": "ensure each author has one or more CRediT roles",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All CRediT roles look good 🥳",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "CRediT Roles",
+            "status": "pass",
+            "message": "Ruth Pfosser has valid CRediT role of \"Writing – original draft\"",
+            "purpose": "ensure each author has one or more CRediT roles",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All CRediT roles look good 🥳",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "CRediT Roles",
+            "status": "pass",
+            "message": "Ruth Pfosser has valid CRediT role of \"Formal analysis\"",
+            "purpose": "ensure each author has one or more CRediT roles",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All CRediT roles look good 🥳",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "CRediT Roles",
+            "status": "pass",
+            "message": "Ruth Pfosser has valid CRediT role of \"Validation\"",
+            "purpose": "ensure each author has one or more CRediT roles",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All CRediT roles look good 🥳",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "CRediT Roles",
+            "status": "pass",
+            "message": "Mike Morrison has valid CRediT role of \"Conceptualization\"",
+            "purpose": "ensure each author has one or more CRediT roles",
+            "optional": true
+          },
+          {
+            "id": "authors-have-credit-roles",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "All CRediT roles look good 🥳",
+            "tags": [
+              "frontmatter",
+              "authors"
+            ],
+            "title": "CRediT Roles",
+            "status": "pass",
+            "message": "Mike Morrison has valid CRediT role of \"Writing – review & editing\"",
+            "purpose": "ensure each author has one or more CRediT roles",
+            "optional": true
+          },
+          {
+            "id": "keywords-defined",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "Keywords added 🔑",
+            "note": "Keywords: \"eye tracking\", \"betterposter design\", \"experimental study\", \"usability\"",
+            "tags": [
+              "frontmatter",
+              "keywords"
+            ],
+            "title": "Keywords",
+            "status": "pass",
+            "message": "Found 4 keywords",
+            "purpose": "ensure keywords exist"
+          },
+          {
+            "id": "keywords-length",
+            "max": 15,
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "Correct number of keywords included 🔢",
+            "tags": [
+              "frontmatter",
+              "keywords"
+            ],
+            "title": "Number of Keywords",
+            "status": "pass",
+            "message": "Correct number of keywords (4/15)",
+            "options": [
+              {
+                "id": "max",
+                "type": "number",
+                "title": "Maximum number of keywords",
+                "default": 5
+              }
+            ],
+            "purpose": "ensure the right number of keywords exist"
+          },
+          {
+            "id": "keywords-unique",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "Keywords are unique 🔐",
+            "tags": [
+              "frontmatter",
+              "keywords"
+            ],
+            "title": "Unique Keywords",
+            "status": "pass",
+            "message": "First time keyword \"eye tracking\" encountered",
+            "purpose": "ensure the keywords are unique"
+          },
+          {
+            "id": "keywords-unique",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "Keywords are unique 🔐",
+            "tags": [
+              "frontmatter",
+              "keywords"
+            ],
+            "title": "Unique Keywords",
+            "status": "pass",
+            "message": "First time keyword \"betterposter design\" encountered",
+            "purpose": "ensure the keywords are unique"
+          },
+          {
+            "id": "keywords-unique",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "Keywords are unique 🔐",
+            "tags": [
+              "frontmatter",
+              "keywords"
+            ],
+            "title": "Unique Keywords",
+            "status": "pass",
+            "message": "First time keyword \"experimental study\" encountered",
+            "purpose": "ensure the keywords are unique"
+          },
+          {
+            "id": "keywords-unique",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\myst.yml",
+            "nice": "Keywords are unique 🔐",
+            "tags": [
+              "frontmatter",
+              "keywords"
+            ],
+            "title": "Unique Keywords",
+            "status": "pass",
+            "message": "First time keyword \"usability\" encountered",
+            "purpose": "ensure the keywords are unique"
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.youtube.com/watch?v=SYk29tnxASs",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 44,
+                "column": 1
+              },
+              "start": {
+                "line": 44,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.youtube.com/watch?v=SYk29tnxASs",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 44,
+                "column": 1
+              },
+              "start": {
+                "line": 44,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.youtube.com/watch?v=WBjhxjWDiHw",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 44,
+                "column": 1
+              },
+              "start": {
+                "line": 44,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://oeawi.at/en/guidelines/#:~:text=All%20persons%20involved%20in%20research,junior%20scientists/researchers%20in%20particular.",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 46,
+                "column": 1
+              },
+              "start": {
+                "line": 46,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "help": "Check that \"https://psycnet.apa.org/record/1935-05800-000\" is correct",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "fail",
+            "message": "https://psycnet.apa.org/record/1935-05800-000 (403, Forbidden)",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 53,
+                "column": 1
+              },
+              "start": {
+                "line": 53,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 57,
+                "column": 1
+              },
+              "start": {
+                "line": 57,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 57,
+                "column": 1
+              },
+              "start": {
+                "line": 57,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 62,
+                "column": 1
+              },
+              "start": {
+                "line": 62,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 64,
+                "column": 1
+              },
+              "start": {
+                "line": 64,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 75,
+                "column": 1
+              },
+              "start": {
+                "line": 75,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 77,
+                "column": 1
+              },
+              "start": {
+                "line": 77,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 79,
+                "column": 1
+              },
+              "start": {
+                "line": 79,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.R-project.org/",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 83,
+                "column": 1
+              },
+              "start": {
+                "line": 83,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "http://www.rstudio.com/",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 83,
+                "column": 1
+              },
+              "start": {
+                "line": 83,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "http://www.posit.co/",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 83,
+                "column": 1
+              },
+              "start": {
+                "line": 83,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://rmarkdown.rstudio.com",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 83,
+                "column": 1
+              },
+              "start": {
+                "line": 83,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 90,
+                "column": 1
+              },
+              "start": {
+                "line": 90,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 90,
+                "column": 1
+              },
+              "start": {
+                "line": 90,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 90,
+                "column": 1
+              },
+              "start": {
+                "line": 90,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 90,
+                "column": 1
+              },
+              "start": {
+                "line": 90,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 109,
+                "column": 1
+              },
+              "start": {
+                "line": 109,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 109,
+                "column": 1
+              },
+              "start": {
+                "line": 109,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 132,
+                "column": 1
+              },
+              "start": {
+                "line": 132,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 138,
+                "column": 1
+              },
+              "start": {
+                "line": 138,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 138,
+                "column": 1
+              },
+              "start": {
+                "line": 138,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 138,
+                "column": 1
+              },
+              "start": {
+                "line": 138,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://humansystems.arc.nasa.gov/groups/TLX/",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 138,
+                "column": 1
+              },
+              "start": {
+                "line": 138,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 140,
+                "column": 1
+              },
+              "start": {
+                "line": 140,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 140,
+                "column": 1
+              },
+              "start": {
+                "line": 140,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 163,
+                "column": 1
+              },
+              "start": {
+                "line": 163,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 167,
+                "column": 1
+              },
+              "start": {
+                "line": 167,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://humansystems.arc.nasa.gov/groups/TLX/",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 169,
+                "column": 1
+              },
+              "start": {
+                "line": 169,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 169,
+                "column": 1
+              },
+              "start": {
+                "line": 169,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 181,
+                "column": 1
+              },
+              "start": {
+                "line": 181,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 181,
+                "column": 1
+              },
+              "start": {
+                "line": 181,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 183,
+                "column": 1
+              },
+              "start": {
+                "line": 183,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 183,
+                "column": 1
+              },
+              "start": {
+                "line": 183,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 183,
+                "column": 1
+              },
+              "start": {
+                "line": 183,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 185,
+                "column": 1
+              },
+              "start": {
+                "line": 185,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 185,
+                "column": 1
+              },
+              "start": {
+                "line": 185,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 187,
+                "column": 1
+              },
+              "start": {
+                "line": 187,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 195,
+                "column": 1
+              },
+              "start": {
+                "line": 195,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 195,
+                "column": 1
+              },
+              "start": {
+                "line": 195,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "links-resolve",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Links are valid 🔗",
+            "tags": [
+              "content",
+              "link"
+            ],
+            "title": "Links Resolve",
+            "status": "pass",
+            "message": "mailto:a08245118@univie.ac.at",
+            "purpose": "ensure all external URLs resolve",
+            "position": {
+              "end": {
+                "line": 297,
+                "column": 1
+              },
+              "start": {
+                "line": 297,
+                "column": 1
+              }
+            }
+          },
+          {
+            "id": "abstract-exists",
+            "file": "C:\\mikes-pubs\\poster-eye-tracking\\paper.md",
+            "nice": "Abstract exists 💯",
+            "tags": [
+              "frontmatter",
+              "abstract"
+            ],
+            "title": "Abstract Exists",
+            "status": "pass",
+            "message": "Abstract exists",
+            "purpose": "ensure abstract exists"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.1016/j.cell.2020.07.029",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Morrison_2020",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.32388/p7n5bo",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Oronje_2022",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.1111/febs.13383",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Rowe_2015",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.1111/hir.12015",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Ilic_2013",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.1037/0033-295x.106.4.643",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Pirolli_1999",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.1207/s15326985ep3801_6",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Mayer_2003",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.1167/jov.20.9.10",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Krasich_2020",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.1007/978-1-4899-5379-7",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Yarbus_1967",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.3390/s22030912",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Katona_2022",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          },
+          {
+            "id": "doi-exists",
+            "nice": "citation valid 🔗",
+            "note": "Citation DOI: 10.13140/RG.2.1.3128.1769",
+            "tags": [
+              "content",
+              "citation"
+            ],
+            "title": "DOI Exists",
+            "status": "pass",
+            "message": "Citation has valid DOI: Galley2015Fixation",
+            "options": [
+              {
+                "id": "fix",
+                "type": "boolean",
+                "title": "Fix DOIs",
+                "description": "Propose alternatives for missing/invalid DOIs"
+              }
+            ],
+            "purpose": "ensure all citations have valid DOI"
+          }
+        ]
+      },
+      "workId": "018fc934-e2ec-7eff-8dcc-545b3d83781d",
+      "submissionId": "018fc934-e5de-7c2d-8318-0205b11515a1",
+      "workVersionId": "01901165-01e0-7d7f-ab5d-939221d45f0c",
+      "submissionVersionId": "01901165-0505-7dd2-bfa9-017805f43657"
+    },
+    "messages": [
+      "Uploading work files to cdn",
+      "Creating new work and submission entry",
+      "Submission completed"
+    ],
+    "links": {
+      "self": "https://sites.curvenote.com/v1/jobs/01901164-e75f-7bb1-b5f6-45f5efb879d5"
+    }
+  },
+  "buildUrl": "https://sites.curvenote.com/build/01901164-e75f-7bb1-b5f6-45f5efb879d5"
+}

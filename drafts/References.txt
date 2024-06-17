@@ -1,0 +1,36 @@
+All inline references checked. Now make bibtex
+
+
+References
+XAllaire, J.J., Xie Y., McPherson J., Luraschi J., Ushey K., Atkins A., Wickham H., Cheng J., Chang W. & Iannone R. (2022). rmarkdown: Dynamic Documents for R. R package version 2.17. URL https://rmarkdown.rstudio.com
+XAustrian Agency for Research Integrity (2015). Guidelines for Good Scientific Practice.
+XBojko, A. (2013). Eye Tracking the User Experience: A Practical Guide to Research. New York.
+XBuswell, G. T. (1935). How People Look at Pictures. A Study of the Psychology of Perception in Art. Chicago: University of Chicago.
+XGalley, N., Betz, D., & Biniossek, C. (2015). Fixation durations - Why are they so highly variable? In T.
+Heinen (Ed.), Advances in Visual Perception Research (pp. 83-106). New York: Nova Science Publishers. https://doi.org/10.13140/RG.2.1.3128.1769
+XHolmqvist, K., Nyström, M., Andersson, R., Dewhurst, R., Jarodzka, H., & Van de Weijer, J. (2011). Eye tracking: A comprehensive guide to methods and measures. OUP Oxford.
+XIlic D. & Rowe N. (2013). What is the evidence that poster presentations are effective in promoting knowledge transfer? A state of the art review. Health Info Libr J 30, 4–12. https://doi.org/10.1111/hir.12015
+XKatona, J. (2022). Measuring Cognition Load Using Eye-Tracking Parameters Based on Algorithm Description Tools. Sensors, 22(3), Article 3. https://doi.org/10.3390/s22030912
+XKrasich K., Huffman G., Faber M., & Brockmole J. R. (2020). Where the eyes wander: The relationship between mind wandering and fixation allocation to visually salient and semantically informative static scene content. Journal of Vision, 20(9), 10. https://doi.org/10.1167/jov.20.9.10
+XMayer R. E. & Moreno R. (2003). Nine Ways to Reduce Cognitive Load in Multimedia Learning. Educational Psychologist, 38(1), 43–52. https://doi.org/10.1207/S15326985EP3801_6
+XMorrison M., Merlo K., & Woessner Z. (2020). How to Boost the Impact of Scientific Conferences. Cell, 182, September 3, 2020, 1067-1071. https://doi.org/10.1016/j.cell.2020.07.029
+XMorrison M. (2020). How to create a better research poster in less time (#betterposter Generation 2). Youtube video, July 13, 2020. https://www.youtube.com/watch?v=SYk29tnxASs
+
+
+XXNASA Task Load Index (TLX). Retrieved from https://humansystems.arc.nasa.gov/groups/TLX/ at 20230320 (website last updated: 2020).
+
+
+XOronje B., Morrison M., Suharlim Ch., Folkman K., Glaude-Hosh A., Jeisy-Scott V. (2022). A step in the right direction: Billboard-style posters preferred overall at two conferences, but should include more methods and limitations. Qeios, November 17, 2022. https://doi.org/10.32388/P7N5BO
+
+XPeter Pirolli & Stuart Card. (1999). Information foraging. Psychological Review, 106(4), 643–675. https://doi.org/10.1037/0033-295X.106.4.643
+
+XPosit team (2022). RStudio: Integrated Development Environment for R. Posit Software, PBC, Boston, MA. URL http://www.posit.co/
+
+
+XXR Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
+
+
+XRowe N. & Ilic D. (2015). Rethinking poster presentations at large-scale scientific meetings – is it time for the format to evolve? FEBS Journal 282 (2015) 3661–3668. https://doi.org/10.1111/febs.13383
+XRStudio Team (2020). RStudio: Integrated Development for R. RStudio, PBC, Boston, MA URL http://www.rstudio.com/
+
+XXYarbus, A. L. (1967). Eye movements and vision. New York: Plenum Press. 

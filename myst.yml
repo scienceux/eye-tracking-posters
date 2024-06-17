@@ -1,0 +1,35 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: f6005183-5290-48e0-a1ec-fce79d0741c2
+  title: "Eye Tracking Pilot: #betterposter Design v2 Enabled Faster and Easier Understanding of Results"
+  authors: 
+    - name: "Ruth Pfosser"
+      affiliation: "University of Vienna, Student"
+      email: "a08245118@univie.ac.at"
+      roles:
+        - Conceptualization
+        - Data curation
+        - Methodology
+        - Writing - original draft
+        - Formal analysis
+        - Validation
+    - name: "Mike Morrison"
+      affiliation: "curvenote, UX-Researcher; Michigan State University, Dep. Work Psychology"
+      roles:
+        - Conceptualization
+        - Writing - review & editing
+  description: "This paper explores the effectiveness of the #betterposter design v2 through an eye tracking study. It discusses the general introduction to eye tracking, the technical setup, and the experimental procedures, highlighting the contributions of the MediaLAB at the University of Vienna and Mike Morrison."
+  banner: images/eye-tracking-banner.png
+  thumbnail: images/poster-eye-tracking-thumb.png
+  keywords: ["eye tracking", "betterposter design", "experimental study", "usability"]
+  # github:
+  # bibliography: []
+site:
+  template: article-theme
+  # title: "Eye Tracking Study on #betterposter Design v2"
+  # nav: []
+  actions:
+    - title: Learn More
+      url: https://mystmd.org/guide
+  domains: []
