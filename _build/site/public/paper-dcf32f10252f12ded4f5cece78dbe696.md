@@ -131,9 +131,7 @@ Results derived from analyzing the questionnaire show as well high scores for #b
 
 As Aga Bojko ([Bojko, 2013](https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc), p. 123) reminds us "interpretation depends on goals and stimuli". Therefore, we have to mention, that one (of the many) limitation of this pilot study[^pilotlimits] is associated with poor experiment design, e.g. not providing tasks (what to watch for) for the participants, - something that changes significantly the way how an image is looked at, as already pointed out by Alfred Yarbus ([Yarbus, 1967](https://link.springer.com/book/10.1007/978-1-4899-5379-7), pp. 171 ff.). As the raincloud plots ({numref}`raincloud-plot` and {numref}`raincloud-plot-pupils`) for average fixation duration and pupil size show, the measures of the 13 participants are widespread, this holds true for the other measures including the questionnaire as well. An additional hint, why we may not conclude from this small sample to a larger population.
 
-[^pilotlimits]: For a non-exhaustive list of shortcomings of this study and necessary improvements for subsequent studies see the sections “Discussion” and “Conclusion and Next Steps”
-
-A non-exhaustive list of things to consider for the next study is listed in the section Conclusion and Next Steps.
+[^pilotlimits]: A non-exhaustive list of things to consider for the next study is listed in the section Conclusion and Next Steps.
 
 Regarding the treatment and interpretation of measures, derived from EyeLink 1000 Pro, here some criticism:
 
