@@ -29,7 +29,4 @@ site:
   template: article-theme
   # title: "Eye Tracking Study on #betterposter Design v2"
   # nav: []
-  actions:
-    - title: Learn More
-      url: https://mystmd.org/guide
   domains: []
