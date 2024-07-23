@@ -54,7 +54,7 @@ By means of eye tracking technology, this exploratory experimental study aims at
 
 Eye tracking technology is used to locate and follow a person’s gaze while looking at objects. Since it is difficult to look at something and think about something different, the focus of the eye is often equated with the focus of the brain ([Krasich et al., 2020](https://doi.org/10.1167/jov.20.9.10)). This may be observed by a changing focus and altered gaze traces, when the tasks given to the participants change ([Buswell, 1935](https://psycnet.apa.org/record/1935-05800-000), p. 136 and [Yarbus, 1967](https://link.springer.com/book/10.1007/978-1-4899-5379-7), p. 174).
 
-In user experience testing the think-aloud approach[^thinkaloud], observation, questionnaires, as well as eye tracking technology, and combinations are used ([Bojko, 2013](https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc). P. 106). Eye tracking is used to a smaller degree, since it requires expensive equipment and trained personnel. Eye tracking delivers high-precision measurements and outcomes, that in general are not necessary for most applications in UX testing ([Bojko 2013](https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc), p. 44). The current study relies on eye tracking technology based on the fact, that cognitive load[^cogload] may be reliably measured by the participants’ pupil size and average fixation duration, and this was key in the context of this study.
+In user experience testing the think-aloud approach[^thinkaloud], observation, questionnaires, as well as eye tracking technology, and combinations are used ([Bojko, 2013](https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc). p. 106). Eye tracking is used to a smaller degree, since it requires expensive equipment and trained personnel. Eye tracking delivers high-precision measurements and outcomes, that in general are not necessary for most applications in UX testing ([Bojko 2013](https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc), p. 44). The current study relies on eye tracking technology based on the fact, that cognitive load[^cogload] may be reliably measured by the participants’ pupil size and average fixation duration, and this was key in the context of this study.
 
 
 ### Study Design
@@ -152,9 +152,11 @@ Questionnaire data again show large individual differences, providing no indicat
 
 This exploratory experimental pilot study shows promising ways to answer pressing questions regarding better research communication with academic posters and has detected and explicated many shortcomings in experiment design, analysis, and interpretation of results.
 
-Subsequent experiments shall consider (non-exhaustive list):
+:::{note} See more
+:class: dropdown
 
-- Stimuli shall be tailored, so that the same topic, the same research is presented in all poster design versions studied. This will help to rule out topic related interests. Number of posters need to be increased significantly. As an example, three poster designs representing this paper’s results are shown in the appendix.
+Subsequent experiments shall consider (non-exhaustive list)...
+- Stimuli shall be tailored, so that the same topic, the same research is presented in all poster design versions studied. This will help to rule out topic related interests. Number of posters need to be increased significantly. 
 
 - AOIs need to be defined based on careful consideration (size of AOIs influencing result, additional interviews with experts: what is necessary for the decision, whether research presented on poster is important and worthwhile to download and read the paper?).
 
@@ -197,7 +199,7 @@ Subsequent experiments shall consider (non-exhaustive list):
 - Add concurrent think-aloud verbal protocols (CVP) (cave: adds extra cognitive workload!) or Retrospective Verbal Protocol (RVP) as described by [Bojko, 2013, p. 108](https://books.google.com/books?hl=en&lr=&id=cHo3DwAAQBAJ&oi=fnd&pg=PR3&dq=Eye+Tracking+the+User+Experience:+A+Practical+Guide+to+Research.+New+York&ots=8cSGuOqp_4&sig=CzGMaVCYgcwI0TygHfNIqj92nnc) for comparison and/or to get additional insights on information processing. Review [Holmqvist 2011, p. 295](https://www.researchgate.net/publication/323779800_Eye-tracking_A_comprehensive_guide_to_methods_paradigms_and_measures) on triangulating eye-movement data with verbal data).
 
 - Research, whether studies have already shown that negative words and those indicating conflict and dissent (negative, no, none, not, in-, un-, dis-, etc.) and subclauses with but, although, except, etc. evoke higher attention (emotional arousal, alert?). The same for graphs and diagrams with crossing lines (including segmented bar charts), with and without alarming colors (red, orange, yellow).
-
+:::
 
 ## Figures & Tables
 
@@ -228,7 +230,7 @@ Note. Average Fixation Duration (avgFixDur) measures the average of all fixation
 :align: left
 
 The Stimuli: Poster Material (8+4: traditional poster design, 1+2: #betterposter version 2 designs); 3+5: #betterposter version 1 designs; 7+6 #betterposter version 1 designs text-only)
-Note. Original posters are colored and just presented in black and white here; Posters 1 and 2, the “winner” poster designs are marked red and orange in graphs and tables throughout this paper.
+Note: Original posters are colored and just presented in black and white here; Posters 1 and 2, the “winner” poster designs are marked red and orange in graphs and tables throughout this paper.
 ```
 
 ```{figure} images/figure2-poster-eye-tracking-all-measures.png
@@ -272,7 +274,7 @@ Raincloud Plot depicting the Average Pupil Size of participants as dots, Central
 :alt: Gaze signatures
 :align: left
 
-Gaze Signatures of Participants Watching Poster N° 2 based on Fixation Duration Timelines. Note. Orange are Fixations within AOIs and black those outside AOIs. The duration of the fixations is marked as line (spike=longer duration). This graph was meant to reveal patterns on how easy / difficult the poster content was to digest. The idea was, that good poster design should produce no spikes (shorter fixation duration is associated with lower cognitive load) and should be mostly orange (participants looking at the relevant parts of the poster mostly). Although this poster n°2 (considered the best #betterposter design) does invoke long and unspiked orange line segments (especially in comparison with other posters), it remains unclear (to the author) how to interpret the results.
+Gaze Signatures of Participants Watching Poster N° 2 based on Fixation Duration Timelines. Note: Orange are Fixations within AOIs and black those outside AOIs. The duration of the fixations is marked as line (spike=longer duration). This graph was meant to reveal patterns on how easy / difficult the poster content was to digest. The idea was, that good poster design should produce no spikes (shorter fixation duration is associated with lower cognitive load) and should be mostly orange (participants looking at the relevant parts of the poster mostly). Although this poster n°2 (considered the best #betterposter design) does invoke long and unspiked orange line segments (especially in comparison with other posters), it remains unclear (to the author) how to interpret the results.
 ```
 
 :::{figure}
@@ -284,17 +286,10 @@ Gaze Signatures of Participants Watching Poster N° 2 based on Fixation Duration
 
 ![Traditional poster heatmaps](images/heamaps-part2.png)
 
-Heatmaps, Depicting the Focal Points for all Poster Designs in Comparison. Note. Red = areas that are looked at most often, no Color = nobody looked at this part of the poster. Compare e.g. poster n° 4 on the lower left side (esp. 3rd column: few to non-views in the result section) with poster n° 1 on the lower right side (all parts visited quite equally).
+Heatmaps, Depicting the Focal Points for all Poster Designs in Comparison. Note: Red = areas that are looked at most often, no Color = nobody looked at this part of the poster. Compare e.g. poster n° 4 on the lower left side (esp. 3rd column: few to non-views in the result section) with poster n° 1 on the lower right side (all parts visited quite equally).
 :::
-
-### Appendix
-Academic posters created for this paper’s content in three different designs.
-Note: 
-a) #betterposter version 2, presenter mode, landscape format: considered best practice (QR code needs to be added), includes summary, call to action. 
-b) traditional academic poster layout (template of the University of Vienna): very crowded wall-of-text poster, title not framed as crisp message, but as long and quirky question (many readers presumably will exit at this point). 
-c) #betterposter version 2, portrait mode: layout not analyzed within this experiment, but should work in general, besides of still being too crowded, missing: summary and call to action.
 
 ## Author's Note
 :::{note}
-A general introduction in history, technique, and method of eye tracking, the use of technical equipment, and set-up of and conducting the experiment was kindly provided by the MediaLAB of the Faculty of Philological and Cultural Studies at the University of Vienna and it’s director Dr. Jörg Mühlhans. The stimuli were provided and prepared by Mike Morrison, who as well invented, created, and promoted the #betterposter design, based on his own research in the field. In addition Mike recommended literature on the topic. Data analysis and writing of this paper was done by Ruth Pfosser. The authors have no conflicts of interest to disclose. Please note: this paper contains by no means publishable content. This exploratory experimental pilot study was conducted during an university course introducing the eye tracking technology. As a first attempt to implement this method, this study contains errors, flaws, and shortcomings in all relevant parts. As a pilot study it needs replication for objectivity, validity, and reliability. Correspondence concerning this article should be addressed to Ruth Pfosser, University of Vienna. Email: a08245118@univie.ac.at
+A general introduction in history, technique, and method of eye tracking, the use of technical equipment, and set-up of and conducting the experiment was kindly provided by the MediaLAB of the Faculty of Philological and Cultural Studies at the University of Vienna and its director Dr. Jörg Mühlhans. The stimuli were provided and prepared by Mike Morrison, who as well invented, created, and promoted the #betterposter design, based on his own research in the field. In addition Mike recommended literature on the topic. Data analysis and writing of this paper was done by Ruth Pfosser. The authors have no conflicts of interest to disclose. Please note: this paper contains by no means publishable content. This exploratory experimental pilot study was conducted during an university course introducing the eye tracking technology. As a first attempt to implement this method, this study contains errors, flaws, and shortcomings in all relevant parts. As a pilot study it needs replication for objectivity, validity, and reliability. Correspondence concerning this article should be addressed to Ruth Pfosser, University of Vienna. Email: a08245118@unet.univie.ac.at
 :::
